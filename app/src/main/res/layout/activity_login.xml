@@ -5,8 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@mipmap/logo"
     android:gravity="center"
-    android:background="@mipmap/Logo"
     android:orientation="vertical"
     tools:context=".LoginActivity">
 
