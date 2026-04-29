@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">K23411TEApp</string>
+    <string name="str_welcome">Chào mừng đến với 411Te</string>
+    <string name="str_clickme">Bấm tôi điii</string>
+    <string name="str_login_system">ĐĂNG NHẬP HỆ THỐNG</string>
+    <string name="str_user_name">User name:</string>
+    <string name="str_hint_username">Enter your username here</string>
+    <string name="str_password">Password:</string>
+    <string name="str_hint_password">Enter your password here</string>
+    <string name="str_login">Login</string>
+    <string name="str_exit">"Exit "</string>
+    <string name="str_login_successful">Đăng nhập thành công </string>
+    <string name="str_login_failed">đăng nhập thất bại</string>
+</resources>
