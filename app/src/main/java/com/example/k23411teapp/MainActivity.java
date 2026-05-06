@@ -1,5 +1,6 @@
 package com.example.k23411teapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -35,5 +36,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void exit_app(View view) {
         finish();
+    }
+
+    public void openCalculatorApp(View view) {
+        Intent intent=new Intent(MainActivity.this, CalculatorActivity.class);
+        startActivity(intent);
     }
 }
