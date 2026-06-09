@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@mipmap/logo"
     android:gravity="center"
     android:orientation="vertical"
@@ -54,6 +54,29 @@
         android:inputType="textPassword"
         android:text="123"
         android:textSize="34sp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/radAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_admin" />
+
+        <RadioButton
+            android:id="@+id/radStaff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/str_staff" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/chkSaveInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_save_info" />
 
     <LinearLayout
         android:layout_width="match_parent"

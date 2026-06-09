@@ -18,4 +18,69 @@
     <string name="str_ms">MS</string>
     <string name="str_m">M</string>
     <string name="str_open_calculator">Open Calculator</string>
+    <string name="str_save_info">Save login information</string>
+    <string name="str_admin">Admin</string>
+    <string name="str_staff">Staff</string>
+    <string name="str_confirm_exit">Are you sure you want to exit?</string>
+    <string name="str_id">ID</string>
+    <string name="str_name">Name</string>
+    <string name="str_phone">Phone</string>
+    <string name="str_save">Save</string>
+    <string name="str_clear">Clear</string>
+    <string name="str_delete">Delete</string>
+    <string name="str_department">Department</string>
+    <string name="str_listEmp">List of employee</string>
+    <string name="str_id_label">ID: </string>
+    <string name="str_name_label">Name: </string>
+    <string name="str_phone_label">Phone: </string>
+    <string name="str_empID">Employee ID</string>
+    <string name="str_birthplace">Birthplace</string>
+    <string name="str_ordermanagement">Order Management</string>
+    <string name="str_fromDate">From Date</string>
+    <string name="str_toDate">To Date</string>
+    <string name="str_order_all_status">All status order</string>
+    <string name="str_completed_order">Completed Order</string>
+    <string name="str_not_yet_payment">Not yet Payment Order</string>
+    <string name="str_going_logistic">Going Logistic Order</string>
+    <string name="str_customer_complaint">Customer Angry Order</string>
+    <string name="str_add_new_category">Add new category</string>
+    <string name="str_category_statistics">Category Statistic</string>
+    <string name="str_category_id">Category ID</string>
+    <string name="str_category_name">Category Name</string>
+    <string-array name="list_birthplace">
+        <item>An Giang</item>
+        <item>Bắc Ninh</item>
+        <item>Cà Mau</item>
+        <item>Cần Thơ</item>
+        <item>Cao Bằng</item>
+        <item>Đà Nẵng</item>
+        <item>Đắk Lắk</item>
+        <item>Điện Biên</item>
+        <item>Đồng Nai</item>
+        <item>Đồng Tháp</item>
+        <item>Gia Lai</item>
+        <item>Hà Nội</item>
+        <item>Hà Tĩnh</item>
+        <item>Hải Phòng</item>
+        <item>Huế</item>
+        <item>Hưng Yên</item>
+        <item>Khánh Hòa</item>
+        <item>Lai Châu</item>
+        <item>Lâm Đồng</item>
+        <item>Lạng Sơn</item>
+        <item>Lào Cai</item>
+        <item>Nghệ An</item>
+        <item>Ninh Bình</item>
+        <item>Phú Thọ</item>
+        <item>Quảng Ngãi</item>
+        <item>Quảng Ninh</item>
+        <item>Quảng Trị</item>
+        <item>Sơn La</item>
+        <item>Tây Ninh</item>
+        <item>Thái Nguyên</item>
+        <item>Thanh Hóa</item>
+        <item>TP. Hồ Chí Minh</item>
+        <item>Tuyên Quang</item>
+        <item>Vĩnh Long</item>
+    </string-array>
 </resources>

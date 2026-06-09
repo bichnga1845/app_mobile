@@ -5,5 +5,10 @@
     <color name="red">#AB1A1A</color>
     <color name="yellow">#FFEB3B</color>
     <color name="pink">#F1BEF6</color>
-
+    <color name="light_blue">#E3F2FD</color>
+    <color name="light_purple">#F3E5F5</color>
+    <color name="light_red">#FFEBEE</color>
+    <color name="text_blue">#1E88E5</color>
+    <color name="text_purple">#8E24AA</color>
+    <color name="text_red">#E53935</color>
 </resources>

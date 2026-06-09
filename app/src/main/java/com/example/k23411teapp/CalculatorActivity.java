@@ -1,5 +1,6 @@
 package com.example.k23411teapp;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -23,6 +24,33 @@ public class CalculatorActivity extends AppCompatActivity {
     View.OnClickListener click_m_listener;
 
     double memoryValue = 0;
+    private final String CALC_PREF = "CalculatorState";
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+        SharedPreferences preferences = getSharedPreferences(CALC_PREF, MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+
+        editor.putString("LastFormular", edtFormular.getText().toString());
+        editor.putFloat("MemoryValue", (float) memoryValue);
+
+        editor.commit();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        SharedPreferences preferences = getSharedPreferences(CALC_PREF, MODE_PRIVATE);
+
+        String lastFormular = preferences.getString("LastFormular", "");
+        float savedMemory = preferences.getFloat("MemoryValue", 0);
+
+        edtFormular.setText(lastFormular);
+        memoryValue = savedMemory;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -184,3 +212,4 @@ public class CalculatorActivity extends AppCompatActivity {
         }
     }
 }
+

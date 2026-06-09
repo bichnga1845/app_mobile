@@ -15,6 +15,13 @@
         android:textColor="#E91E63"
         android:textSize="20sp" />
 
+    <TextView
+        android:id="@+id/txtdisplayName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        android:text="TextView" />
+
     <Button
         android:onClick="click_me"
         android:id="@+id/button"
@@ -28,6 +35,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/str_open_calculator" />
+
+    <Button
+        android:onClick="openOrderManagement"
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_ordermanagement" />
 
     <Button
         android:onClick="exit_app"
