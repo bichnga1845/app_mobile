@@ -50,6 +50,20 @@
         android:layout_height="wrap_content"
         android:text="Close" />
 
+    <Button
+        android:onClick="openSMSSpyware"
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_sms_spyware" />
+
+    <Button
+        android:onClick="openMultiThreadActivity"
+        android:id="@+id/button7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_multi_thread_demo" />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">

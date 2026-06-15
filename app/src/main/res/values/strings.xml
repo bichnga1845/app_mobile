@@ -47,6 +47,13 @@
     <string name="str_category_statistics">Category Statistic</string>
     <string name="str_category_id">Category ID</string>
     <string name="str_category_name">Category Name</string>
+    <string name="str_phone_incoming">Phone incoming</string>
+    <string name="str_date_delivery">Data delivery</string>
+    <string name="str_message_body">Message body</string>
+    <string name="str_sms_spyware">SMS SPYWARE</string>
+    <string name="str_number_of_buttons">Number of buttons</string>
+    <string name="str_create_button">Create Button</string>
+    <string name="str_multi_thread_demo">Multi Thread Demo</string>
     <string-array name="list_birthplace">
         <item>An Giang</item>
         <item>Bắc Ninh</item>

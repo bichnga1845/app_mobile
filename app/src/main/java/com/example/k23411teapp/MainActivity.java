@@ -62,4 +62,15 @@ public class MainActivity extends AppCompatActivity {
         Intent intent=new Intent(MainActivity.this,OrderManagementActivity.class);
         startActivity(intent);
     }
+
+    public void openSMSSpyware(View view) {
+        Intent intent=new Intent(MainActivity.this,SMSSpywareActivity.class);
+        startActivity(intent);
+
+    }
+
+    public void openMultiThreadActivity(View view) {
+        Intent intent=new Intent(MainActivity.this,MultiThreadActivity.class);
+        startActivity(intent);
+    }
 }

@@ -1,13 +1,19 @@
 package com.example.k23411teapp;
 
 import android.Manifest;
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.database.sqlite.SQLiteDatabase;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -44,6 +50,31 @@ public class LoginActivity extends AppCompatActivity {
     String share_pref_key = "LoginInfo";
 
     RadioButton radAdmin, radStaff;
+
+    Button btnlogin;
+
+    BroadcastReceiver internetStateReceiver=new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            ConnectivityManager connectivityManager= (ConnectivityManager) context.getSystemService(CONNECTIVITY_SERVICE);
+            if(connectivityManager!=null)
+            {
+                NetworkInfo networkInfo=connectivityManager.getActiveNetworkInfo();
+                if(networkInfo!=null&&networkInfo.isConnected())
+                {
+                    btnlogin.setVisibility(View.VISIBLE);
+                }
+                else{
+                    btnlogin.setVisibility(View.INVISIBLE);
+                    Toast.makeText(context,"Mạng rớt rồi",Toast.LENGTH_LONG).show();
+                }
+            }
+            else{
+                btnlogin.setVisibility(View.INVISIBLE);
+                Toast.makeText(context,"Mạng rớt rồi",Toast.LENGTH_LONG).show();
+            }
+        }
+    };
 
     private static final int REQUEST_PERMISSIONS_CODE = 123;
 
@@ -106,6 +137,7 @@ public class LoginActivity extends AppCompatActivity {
         chkSaveInfo = findViewById(R.id.chkSaveInfo);
         radAdmin = findViewById(R.id.radAdmin);
         radStaff = findViewById(R.id.radStaff);
+        btnlogin=findViewById(R.id.btnlogin);
     }
 
     public void LoginSystem(View view) {
@@ -168,6 +200,8 @@ public class LoginActivity extends AppCompatActivity {
                 finish();
             }
         }
+        IntentFilter intentFilter=new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION);
+        registerReceiver(internetStateReceiver,intentFilter);
     }
 
     public static final String DATABASE_NAME = "K23411TE.sqlite";
@@ -212,7 +246,8 @@ public class LoginActivity extends AppCompatActivity {
     }
 
 
-
-
-
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
 }
